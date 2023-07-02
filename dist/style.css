@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5%;
+  background-color: #B0DAFF;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+form > input{
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: black 2px solid;
+  width: 15rem;
+}
+
+form > input:focus {
+  outline: none;
+  border-bottom: 2px solid #FEFF86;
+}
+
+form > input::placeholder{
+  color: gray;
+  font-size: 1rem;
+}
+
+form > button{
+  appearance: none;
+  background-color: #DAF5FF;
+  border: none;
+  border-radius: 10px;
+  width: 10rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form > button:hover{
+  border: 2px solid #FEFF86;
+}
+
+form > button:active{
+  border: 2px solid #FEFF86;
+  background-color: #FEFF86;
+}
+
+#card{
+  width: 40%;
+  height: 30rem;
+  display: grid;
+  grid-template-rows: 0.3fr 0.8fr;
+  background-color: #DAF5FF;
+  border-radius: 20px;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  border: 2px solid transparent;
+}
+
+#card:hover{
+  border: 2px solid #FEFF86;
+}
+
+#card-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#city{
+  font-size: 3rem;
+}
+
+#country{
+  font-size: 1.5rem;
+}
+
+#main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4rem;
+}
+
+#temp-value{
+  font-size: 5rem;
+}
+
+#temp-unit{
+  font-size: 2.5rem;
+}
+
+#weather-icon{
+  width: 5rem;
+  height: 5rem;
+}
+
+#extra{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.ext{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.extra-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 0.4rem;
+}
+
+.extra-header{
+  font-size: 1.5rem;
+  color: #5c5c5c;
+  text-decoration: overline;
+  text-decoration-color: #FEFF86;
+}
+
+#humidity-value, #feels-like-value, #aqi-status{
+  font-size: 1.5rem;
+}
+
+#humidity-icon, #aqi-icon, #feels-like-icon{
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #5c5c5c;
+}
+
+.github-link {
+  color: #FEFF86;
+  text-decoration: none;
+}
+
+.github-link:hover,
+.github-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+

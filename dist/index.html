@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" name="location" id="search" placeholder="Enter city or pincode">
+        <button id="submit">Search</button>
+    </form>
+
+    <div id="card">
+
+        <div id="card-header">
+            <p>
+                <span id="city">City</span>,
+                <span id="country">Country</span>
+            </p>
+        </div>
+
+        <div id="card-body">
+
+            <div id="main">
+                <div id="temp">
+                    <p>
+                        <span id="temp-value">0</span>
+                        <span id="temp-unit">℃</span>
+                    </p>
+                </div>
+                <div id="weather">
+                    <img src="" alt="icon" id="weather-icon">
+                </div>
+            </div>
+
+            <div id="extra">
+
+                <div class="humidity ext">
+                    <h2 class="extra-header">Humidity</h2>
+                    <div class="extra-content">
+                        <img src="./icons/humidity.png" alt="icon" id="humidity-icon">
+                        <p>
+                            <span id="humidity-value">0</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aqi ext">
+                    <h2 class="extra-header">AQI</h2>
+                    <div class="extra-content">
+                        <img src="./icons/aqi.png" alt="icon" id="aqi-icon">
+                        <p>
+                            <span id="aqi-status">Good</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feels-like ext">
+                    <h2 class="extra-header">Feels Like</h2>
+                    <div class="extra-content">
+                        <img src="./icons/feels-like.png" alt="icon" id="feels-like-icon">
+                        <p>
+                            <span id="feels-like-value">0</span>
+                            <span id="feels-like-unit">℃</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p class="footer-text">Made by <a class="github-link" href="https://github.com/Its-Tanay">@Its-Tanay</a></p>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
